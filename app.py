@@ -651,7 +651,7 @@ with tab_pack:
         label = st.selectbox("Robotic arm", list(asset_labels.keys()), index=default_idx)
         asset_id = asset_labels[label]
     with r1c2:
-        year = st.number_input("Year of manufacture", 2010, 2026, 2021, 1)
+        year = int(st.text_input("Year of manufacture", value="2021"))
     with r1c3:
         condition = st.selectbox("Condition", ["excellent", "good", "fair", "poor"], index=1)
     with r1c4:
@@ -660,11 +660,11 @@ with tab_pack:
     hours = st.slider("Operating hours", 0, 80000, 12000, 1000)
     r2c1, r2c2, r2c3, r2c4 = st.columns(4)
     with r2c1:
-        financing = st.number_input("Requested financing (GBP)", 0, 400000, 40000, 1000)
+        financing = int(st.text_input("Requested financing (GBP)", value="40000"))
     with r2c2:
-        project_cost = st.number_input("Total project cost (GBP)", 0, 2000000, 280000, 5000)
+        project_cost = int(st.text_input("Total project cost (GBP)", value="280000"))
     with r2c3:
-        term = st.number_input("Term (months)", 12, 120, 48, 6)
+        term = int(st.text_input("Term (months)", value="48"))
     with r2c4:
         industry = st.selectbox("End-customer industry",
                                 ["packaging", "automotive", "logistics", "general_manufacturing",
