@@ -1,0 +1,10 @@
+# Core — required for the Streamlit app (this is all Streamlit Cloud installs)
+streamlit>=1.30
+pandas>=2.0
+numpy>=1.24
+duckdb>=0.9
+
+# Optional — only needed to run the FastAPI layer locally (api/main.py).
+# Streamlit Cloud does NOT need these; left here for local parity.
+# fastapi>=0.110
+# uvicorn>=0.27

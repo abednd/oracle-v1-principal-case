@@ -1,0 +1,20 @@
+asset_id,manufacturer,model,series,arm_class,payload_kg,reach_mm,axes,controller_family,generation,year_introduced,year_discontinued,msrp_new_usd,typical_applications,secondary_market_liquidity
+fanuc_lrmate_200id_7l,FANUC,LR Mate 200iD/7L,LR Mate,small,7,911,6,R-30iB,current,2014,,42000,assembly|material_handling|machine_tending,high
+fanuc_m20ia,FANUC,M-20iA,M-20,medium,20,1811,6,R-30iB,current,2010,,68000,arc_welding|material_handling|packaging,high
+fanuc_m710ic_50,FANUC,M-710iC/50,M-710,medium,50,2050,6,R-30iB,current,2009,,82000,material_handling|palletizing|spot_welding,high
+fanuc_r2000ic_210f,FANUC,R-2000iC/210F,R-2000,heavy,210,2655,6,R-30iB,current,2014,,150000,spot_welding|material_handling|palletizing,medium
+abb_irb1200_7,ABB,IRB 1200-7/0.7,IRB 1200,small,7,700,6,OmniCore,current,2015,,38000,material_handling|machine_tending|assembly,high
+abb_irb2600_20,ABB,IRB 2600-20/1.65,IRB 2600,medium,20,1650,6,IRC5,current,2011,,64000,arc_welding|material_handling|machine_tending,high
+abb_irb4600_60,ABB,IRB 4600-60/2.05,IRB 4600,medium,60,2050,6,IRC5,current,2011,,88000,material_handling|machine_tending|cutting,medium
+abb_irb6700_235,ABB,IRB 6700-235/2.65,IRB 6700,heavy,235,2655,6,IRC5,current,2013,,165000,spot_welding|material_handling|press_tending,medium
+kuka_kr6_r900,KUKA,KR 6 R900 sixx,KR AGILUS,small,6,901,6,KR C4,current,2013,,40000,assembly|handling|machine_tending,high
+kuka_kr16_r2010,KUKA,KR 16 R2010,KR CYBERTECH,medium,16,2010,6,KR C4,current,2016,,60000,arc_welding|material_handling|gluing,medium
+kuka_kr60_r2100,KUKA,KR 60-3,KR 60,medium,60,2033,6,KR C4,current,2008,,86000,material_handling|machine_tending|palletizing,medium
+kuka_kr210_r2700,KUKA,KR 210 R2700-2,KR QUANTEC,heavy,210,2700,6,KR C4,current,2014,,158000,spot_welding|palletizing|material_handling,medium
+yaskawa_gp8,Yaskawa,GP8,GP,small,8,727,6,YRC1000,current,2017,,41000,assembly|handling|machine_tending,medium
+yaskawa_gp25,Yaskawa,GP25,GP,medium,25,1730,6,YRC1000,current,2018,,66000,arc_welding|handling|cutting,medium
+yaskawa_gp180,Yaskawa,GP180,GP,heavy,180,2702,6,YRC1000,current,2018,,148000,spot_welding|material_handling|palletizing,low
+yaskawa_hc10,Yaskawa,HC10,HC (cobot),cobot,10,1200,6,YRC1000,current,2017,,52000,assembly|machine_tending|inspection,low
+ur_ur5e,Universal Robots,UR5e,e-Series,cobot,5,850,6,e-Series CB5,current,2018,,35000,assembly|machine_tending|inspection,medium
+ur_ur10e,Universal Robots,UR10e,e-Series,cobot,12.5,1300,6,e-Series CB5,current,2018,,50000,palletizing|machine_tending|packaging,medium
+ur_ur16e,Universal Robots,UR16e,e-Series,cobot,16,900,6,e-Series CB5,current,2019,,58000,material_handling|machine_tending|palletizing,low

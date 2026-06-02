@@ -1,0 +1,150 @@
+{
+  "deal_id": "deal_1ca821e6",
+  "inputs": {
+    "asset_id": "fanuc_r2000ic_210f",
+    "year_of_manufacture": 2021,
+    "operating_hours": 12000,
+    "condition_grade": "good",
+    "location_country": "GB",
+    "requested_financing_amount": 40000,
+    "total_project_cost": 280000,
+    "requested_term_months": 48,
+    "si_name": "Northgate Automation",
+    "end_customer_industry": "packaging",
+    "service_contract": true,
+    "includes_tooling": false,
+    "currency": "GBP"
+  },
+  "asset_profile": {
+    "asset_id": "fanuc_r2000ic_210f",
+    "manufacturer": "FANUC",
+    "model": "R-2000iC/210F",
+    "series": "R-2000",
+    "arm_class": "heavy",
+    "payload_kg": 210.0,
+    "reach_mm": 2655.0,
+    "axes": 6,
+    "controller_family": "R-30iB",
+    "generation": "current",
+    "year_introduced": 2014,
+    "year_discontinued": null,
+    "secondary_market_liquidity": "medium",
+    "typical_applications": [
+      "spot_welding",
+      "material_handling",
+      "palletizing"
+    ]
+  },
+  "valuation": {
+    "fmv_low": 62000,
+    "fmv_central": 68500,
+    "fmv_high": 75500,
+    "currency": "GBP",
+    "confidence_score": 90,
+    "confidence_band": "high",
+    "comp_count": 7,
+    "method": "comp_based",
+    "adjustments": {
+      "age": 0.63,
+      "condition": 1.0,
+      "hours": 1.0,
+      "geography": 1.0,
+      "generation": 1.0
+    },
+    "comps_used": [
+      {
+        "obs_id": "obs_0028",
+        "observed_price": 36000,
+        "currency": "GBP",
+        "observation_date": "2025-10-23",
+        "condition_grade": "fair",
+        "operating_hours": null,
+        "age_years": 12.0,
+        "source_type": "oem_refurb",
+        "source_name": "OEM Certified",
+        "location_country": "MX"
+      },
+      {
+        "obs_id": "obs_0029",
+        "observed_price": 61500,
+        "currency": "GBP",
+        "observation_date": "2025-03-08",
+        "condition_grade": "good",
+        "operating_hours": 31000,
+        "age_years": 5.0,
+        "source_type": "oem_refurb",
+        "source_name": "OEM Certified",
+        "location_country": "DE"
+      },
+      {
+        "obs_id": "obs_0034",
+        "observed_price": 52500,
+        "currency": "GBP",
+        "observation_date": "2026-01-27",
+        "condition_grade": "good",
+        "operating_hours": 31000,
+        "age_years": 7.0,
+        "source_type": "dealer_listing",
+        "source_name": "RobotWorx",
+        "location_country": "IT"
+      },
+      {
+        "obs_id": "obs_0033",
+        "observed_price": 89000,
+        "currency": "GBP",
+        "observation_date": "2025-07-18",
+        "condition_grade": "good",
+        "operating_hours": null,
+        "age_years": 3.0,
+        "source_type": "dealer_listing",
+        "source_name": "EU Robots",
+        "location_country": "IT"
+      },
+      {
+        "obs_id": "obs_0030",
+        "observed_price": 68000,
+        "currency": "GBP",
+        "observation_date": "2024-08-26",
+        "condition_grade": "good",
+        "operating_hours": 45000,
+        "age_years": 5.0,
+        "source_type": "dealer_listing",
+        "source_name": "RobotWorx",
+        "location_country": "US"
+      },
+      {
+        "obs_id": "obs_0031",
+        "observed_price": 51000,
+        "currency": "GBP",
+        "observation_date": "2024-11-07",
+        "condition_grade": "excellent",
+        "operating_hours": 45000,
+        "age_years": 7.0,
+        "source_type": "broker_quote",
+        "source_name": "IRS Robotics",
+        "location_country": "ES"
+      }
+    ]
+  },
+  "ltv": {
+    "recommended_ltv_pct": 59,
+    "max_ltv_pct": 70,
+    "requested_ltv_pct": 58.4,
+    "advance_recommended": 40500,
+    "decision": "go",
+    "rationale": "requested 58% vs recommended 59%; high confidence; stress recovery covers financing; recommended advance held at stress-recovery level for safety."
+  },
+  "recovery": {
+    "base_recovery_value": 60500,
+    "stress_recovery_value": 40500,
+    "base_haircut_pct": 12.0,
+    "stress_haircut_pct": 35.0,
+    "time_to_sell_months_base": 6,
+    "time_to_sell_months_stress": 12.0,
+    "preferred_path": "redeployment",
+    "recovery_confidence": "high",
+    "stress_covers_financing": true
+  },
+  "risk_flags": [],
+  "disclaimer": "Asset specs are real; market transactions are synthetic for this case. Schema, valuation/recovery logic, and the API surface are production-shaped."
+}

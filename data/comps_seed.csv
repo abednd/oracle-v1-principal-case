@@ -1,0 +1,112 @@
+obs_id,asset_id,observed_price,currency,observation_date,condition_grade,operating_hours,age_years,source_type,source_name,location_country,includes_tooling,includes_controller,reliability_weight
+obs_0001,fanuc_lrmate_200id_7l,10000,GBP,2024-09-30,excellent,14000,11,dealer_listing,RobotWorx,DE,True,True,0.85
+obs_0002,fanuc_lrmate_200id_7l,23500,GBP,2024-09-14,good,,3,dealer_listing,RobotWorx,US,True,True,0.85
+obs_0003,fanuc_lrmate_200id_7l,15000,GBP,2025-10-30,good,45000,4,broker_quote,IRS Robotics,JP,False,True,0.75
+obs_0004,fanuc_lrmate_200id_7l,15000,GBP,2026-01-02,good,9000,7,oem_refurb,OEM Certified,US,False,True,0.9
+obs_0005,fanuc_lrmate_200id_7l,15500,GBP,2025-03-20,good,,7,auction_result,Surplus Auctions,GB,True,True,0.7
+obs_0006,fanuc_lrmate_200id_7l,16500,GBP,2025-08-21,good,22000,4,broker_quote,IRS Robotics,FR,False,True,0.75
+obs_0007,fanuc_lrmate_200id_7l,9000,GBP,2025-10-27,fair,,11,dealer_listing,EU Robots,GB,False,True,0.85
+obs_0008,fanuc_lrmate_200id_7l,12000,GBP,2024-06-30,good,14000,7,auction_result,Surplus Auctions,FR,True,True,0.7
+obs_0009,fanuc_lrmate_200id_7l,18500,GBP,2024-05-07,fair,4000,4,dealer_listing,EU Robots,US,True,True,0.85
+obs_0010,fanuc_m20ia,21500,GBP,2025-07-11,fair,,7,dealer_listing,RobotWorx,DE,True,True,0.85
+obs_0011,fanuc_m20ia,17500,GBP,2024-06-22,fair,22000,9,dealer_listing,RobotWorx,GB,False,True,0.85
+obs_0012,fanuc_m20ia,18000,GBP,2025-01-28,good,9000,10,auction_result,Surplus Auctions,GB,False,True,0.7
+obs_0013,fanuc_m20ia,23000,GBP,2025-12-20,good,4000,7,broker_quote,IRS Robotics,DE,True,True,0.75
+obs_0014,fanuc_m20ia,14000,GBP,2024-12-18,fair,31000,10,broker_quote,IRS Robotics,US,False,True,0.75
+obs_0015,fanuc_m20ia,28000,GBP,2025-07-12,fair,,4,auction_result,Surplus Auctions,DE,False,True,0.7
+obs_0016,fanuc_m20ia,18500,GBP,2025-07-16,good,4000,11,dealer_listing,EU Robots,MX,True,True,0.85
+obs_0017,fanuc_m20ia,22500,GBP,2025-03-25,fair,14000,4,auction_result,Surplus Auctions,GB,True,True,0.7
+obs_0018,fanuc_m20ia,19500,GBP,2025-04-05,poor,,4,broker_quote,IRS Robotics,GB,False,True,0.75
+obs_0019,fanuc_m710ic_50,26500,GBP,2024-10-13,excellent,,9,dealer_listing,RobotWorx,GB,True,True,0.85
+obs_0020,fanuc_m710ic_50,19000,GBP,2025-09-07,fair,4000,10,dealer_listing,RobotWorx,PL,True,True,0.85
+obs_0021,fanuc_m710ic_50,23500,GBP,2025-08-24,good,22000,8,dealer_listing,EU Robots,GB,True,True,0.85
+obs_0022,fanuc_m710ic_50,35000,GBP,2026-02-10,excellent,9000,7,broker_quote,IRS Robotics,DE,True,True,0.75
+obs_0023,fanuc_m710ic_50,16500,GBP,2025-09-04,fair,22000,11,dealer_listing,RobotWorx,US,True,True,0.85
+obs_0024,fanuc_m710ic_50,37000,GBP,2026-01-02,good,9000,3,auction_result,Surplus Auctions,JP,False,True,0.7
+obs_0025,fanuc_m710ic_50,24500,GBP,2024-06-19,good,45000,7,auction_result,Surplus Auctions,DE,True,True,0.7
+obs_0026,fanuc_m710ic_50,14500,GBP,2024-10-09,good,22000,12,auction_result,Surplus Auctions,DE,False,True,0.7
+obs_0027,fanuc_m710ic_50,20000,GBP,2024-09-25,good,14000,10,dealer_listing,EU Robots,PL,True,True,0.85
+obs_0028,fanuc_r2000ic_210f,36000,GBP,2025-10-23,fair,,12,oem_refurb,OEM Certified,MX,False,True,0.9
+obs_0029,fanuc_r2000ic_210f,61500,GBP,2025-03-08,good,31000,5,oem_refurb,OEM Certified,DE,False,True,0.9
+obs_0030,fanuc_r2000ic_210f,68000,GBP,2024-08-26,good,45000,5,dealer_listing,RobotWorx,US,True,True,0.85
+obs_0031,fanuc_r2000ic_210f,51000,GBP,2024-11-07,excellent,45000,7,broker_quote,IRS Robotics,ES,True,True,0.75
+obs_0032,fanuc_r2000ic_210f,45500,GBP,2024-09-05,excellent,,10,broker_quote,IRS Robotics,US,True,True,0.75
+obs_0033,fanuc_r2000ic_210f,89000,GBP,2025-07-18,good,,3,dealer_listing,EU Robots,IT,True,True,0.85
+obs_0034,fanuc_r2000ic_210f,52500,GBP,2026-01-27,good,31000,7,dealer_listing,RobotWorx,IT,True,True,0.85
+obs_0035,abb_irb1200_7,18000,GBP,2025-04-19,good,,4,dealer_listing,RobotWorx,DE,True,True,0.85
+obs_0036,abb_irb1200_7,12000,GBP,2024-06-11,good,4000,8,dealer_listing,EU Robots,GB,True,True,0.85
+obs_0037,abb_irb1200_7,20500,GBP,2025-12-23,good,,3,oem_refurb,OEM Certified,DE,True,True,0.9
+obs_0038,abb_irb1200_7,12500,GBP,2025-07-15,good,9000,7,auction_result,Surplus Auctions,DE,False,True,0.7
+obs_0039,abb_irb1200_7,11500,GBP,2026-04-08,fair,,7,dealer_listing,RobotWorx,GB,False,True,0.85
+obs_0040,abb_irb1200_7,11500,GBP,2024-09-14,good,14000,9,dealer_listing,RobotWorx,GB,True,True,0.85
+obs_0041,abb_irb1200_7,11500,GBP,2025-11-11,excellent,4000,10,broker_quote,IRS Robotics,ES,False,True,0.75
+obs_0042,abb_irb1200_7,11000,GBP,2025-04-10,excellent,22000,9,auction_result,Surplus Auctions,JP,True,True,0.7
+obs_0043,abb_irb1200_7,8000,GBP,2024-07-15,fair,22000,8,auction_result,Surplus Auctions,PL,True,True,0.7
+obs_0044,abb_irb2600_20,15500,GBP,2025-05-06,fair,4000,9,auction_result,Surplus Auctions,DE,False,True,0.7
+obs_0045,abb_irb2600_20,20500,GBP,2025-09-19,good,,9,dealer_listing,EU Robots,DE,False,True,0.85
+obs_0046,abb_irb2600_20,24000,GBP,2025-06-30,good,9000,7,dealer_listing,RobotWorx,FR,True,True,0.85
+obs_0047,abb_irb2600_20,18000,GBP,2026-03-14,good,31000,8,broker_quote,IRS Robotics,ES,True,True,0.75
+obs_0048,abb_irb2600_20,20500,GBP,2025-05-25,good,14000,8,dealer_listing,RobotWorx,IT,False,True,0.85
+obs_0049,abb_irb2600_20,21000,GBP,2024-04-16,poor,,3,dealer_listing,EU Robots,IT,False,True,0.85
+obs_0050,abb_irb2600_20,15000,GBP,2025-05-08,good,9000,12,dealer_listing,EU Robots,DE,False,True,0.85
+obs_0051,abb_irb2600_20,12000,GBP,2024-04-28,fair,14000,11,broker_quote,IRS Robotics,FR,False,True,0.75
+obs_0052,abb_irb2600_20,32000,GBP,2025-10-15,excellent,31000,4,broker_quote,IRS Robotics,US,False,True,0.75
+obs_0053,abb_irb4600_60,40000,GBP,2024-07-29,good,,6,dealer_listing,EU Robots,DE,False,True,0.85
+obs_0054,abb_irb4600_60,43000,GBP,2025-10-20,good,9000,5,broker_quote,IRS Robotics,JP,True,True,0.75
+obs_0055,abb_irb4600_60,26500,GBP,2025-05-29,good,22000,8,dealer_listing,RobotWorx,MX,True,True,0.85
+obs_0056,abb_irb4600_60,34000,GBP,2026-01-27,excellent,,9,dealer_listing,RobotWorx,GB,False,True,0.85
+obs_0057,abb_irb4600_60,26000,GBP,2025-11-11,fair,9000,6,auction_result,Surplus Auctions,US,True,True,0.7
+obs_0058,abb_irb6700_235,36000,GBP,2026-02-19,fair,9000,11,dealer_listing,RobotWorx,MX,True,True,0.85
+obs_0059,abb_irb6700_235,37000,GBP,2025-01-13,good,45000,11,broker_quote,IRS Robotics,BR,False,True,0.75
+obs_0060,abb_irb6700_235,74500,GBP,2025-08-01,good,4000,4,auction_result,Surplus Auctions,GB,False,True,0.7
+obs_0061,abb_irb6700_235,83000,GBP,2025-07-07,good,9000,4,dealer_listing,RobotWorx,DE,False,True,0.85
+obs_0062,abb_irb6700_235,59000,GBP,2024-04-18,fair,,7,dealer_listing,RobotWorx,US,True,True,0.85
+obs_0063,kuka_kr6_r900,8000,GBP,2025-02-05,good,22000,11,broker_quote,IRS Robotics,US,False,True,0.75
+obs_0064,kuka_kr6_r900,11500,GBP,2026-04-05,poor,,3,auction_result,Surplus Auctions,JP,False,True,0.7
+obs_0065,kuka_kr6_r900,10000,GBP,2025-08-29,fair,31000,8,broker_quote,IRS Robotics,JP,False,True,0.75
+obs_0066,kuka_kr6_r900,10500,GBP,2025-02-21,good,45000,9,dealer_listing,RobotWorx,US,True,True,0.85
+obs_0067,kuka_kr6_r900,17000,GBP,2026-01-16,fair,,5,oem_refurb,OEM Certified,IT,False,True,0.9
+obs_0068,kuka_kr6_r900,8500,GBP,2025-05-12,fair,4000,10,dealer_listing,RobotWorx,US,False,True,0.85
+obs_0069,kuka_kr6_r900,12500,GBP,2024-10-06,good,31000,6,dealer_listing,RobotWorx,DE,True,True,0.85
+obs_0070,kuka_kr6_r900,14000,GBP,2025-08-01,good,,7,auction_result,Surplus Auctions,FR,True,True,0.7
+obs_0071,kuka_kr6_r900,9000,GBP,2025-08-31,good,9000,12,dealer_listing,RobotWorx,FR,False,True,0.85
+obs_0072,kuka_kr16_r2010,21500,GBP,2025-10-26,fair,4000,6,broker_quote,IRS Robotics,BR,False,True,0.75
+obs_0073,kuka_kr16_r2010,17000,GBP,2024-04-09,good,14000,9,broker_quote,IRS Robotics,PL,True,True,0.75
+obs_0074,kuka_kr16_r2010,20000,GBP,2024-08-05,good,9000,9,dealer_listing,RobotWorx,JP,True,True,0.85
+obs_0075,kuka_kr16_r2010,15000,GBP,2026-03-30,good,31000,10,broker_quote,IRS Robotics,DE,False,True,0.75
+obs_0076,kuka_kr16_r2010,34000,GBP,2025-01-21,excellent,22000,3,broker_quote,IRS Robotics,ES,True,True,0.75
+obs_0077,kuka_kr60_r2100,27000,GBP,2024-12-21,poor,14000,4,broker_quote,IRS Robotics,PL,False,True,0.75
+obs_0078,kuka_kr60_r2100,45000,GBP,2025-08-05,good,9000,3,auction_result,Surplus Auctions,DE,False,True,0.7
+obs_0079,kuka_kr60_r2100,39500,GBP,2024-11-28,good,31000,3,dealer_listing,EU Robots,GB,True,True,0.85
+obs_0080,kuka_kr210_r2700,52500,GBP,2024-09-19,fair,22000,7,dealer_listing,RobotWorx,IT,True,True,0.85
+obs_0081,kuka_kr210_r2700,55000,GBP,2025-08-08,poor,,4,dealer_listing,RobotWorx,US,False,True,0.85
+obs_0082,kuka_kr210_r2700,82500,GBP,2025-06-02,good,,5,dealer_listing,RobotWorx,US,False,True,0.85
+obs_0083,kuka_kr210_r2700,66500,GBP,2024-04-22,good,22000,5,dealer_listing,EU Robots,JP,False,True,0.85
+obs_0084,kuka_kr210_r2700,52000,GBP,2024-10-10,good,9000,8,dealer_listing,RobotWorx,DE,True,True,0.85
+obs_0085,yaskawa_gp8,12000,GBP,2024-08-08,good,45000,8,dealer_listing,RobotWorx,IT,False,True,0.85
+obs_0086,yaskawa_gp8,9000,GBP,2024-10-12,fair,14000,9,dealer_listing,RobotWorx,DE,True,True,0.85
+obs_0087,yaskawa_gp8,15500,GBP,2024-11-25,excellent,,7,broker_quote,IRS Robotics,FR,True,True,0.75
+obs_0088,yaskawa_gp8,21000,GBP,2026-02-18,excellent,14000,3,dealer_listing,EU Robots,GB,False,True,0.85
+obs_0089,yaskawa_gp8,23000,GBP,2026-02-16,good,,3,dealer_listing,EU Robots,DE,True,True,0.85
+obs_0090,yaskawa_gp25,20500,GBP,2025-02-09,fair,14000,7,dealer_listing,RobotWorx,US,True,True,0.85
+obs_0091,yaskawa_gp25,28000,GBP,2024-09-06,good,45000,4,dealer_listing,RobotWorx,IT,True,True,0.85
+obs_0092,yaskawa_gp25,22000,GBP,2024-06-04,poor,,4,oem_refurb,OEM Certified,DE,True,True,0.9
+obs_0093,yaskawa_gp25,27500,GBP,2024-12-16,good,,7,dealer_listing,RobotWorx,US,False,True,0.85
+obs_0094,yaskawa_gp25,20000,GBP,2025-07-15,good,14000,8,auction_result,Surplus Auctions,GB,True,True,0.7
+obs_0095,yaskawa_gp180,81000,GBP,2026-01-28,excellent,9000,5,broker_quote,IRS Robotics,PL,True,True,0.75
+obs_0096,yaskawa_gp180,44500,GBP,2025-02-23,fair,14000,7,dealer_listing,EU Robots,GB,False,True,0.85
+obs_0097,yaskawa_hc10,17500,GBP,2025-05-16,good,45000,5,dealer_listing,RobotWorx,DE,False,True,0.85
+obs_0098,yaskawa_hc10,17000,GBP,2026-03-01,excellent,,9,oem_refurb,OEM Certified,FR,True,True,0.9
+obs_0099,ur_ur5e,13500,GBP,2024-06-30,good,45000,5,oem_refurb,OEM Certified,DE,False,True,0.9
+obs_0100,ur_ur5e,10000,GBP,2025-05-09,good,31000,8,dealer_listing,EU Robots,FR,False,True,0.85
+obs_0101,ur_ur5e,13000,GBP,2025-05-24,good,31000,3,auction_result,Surplus Auctions,GB,False,True,0.7
+obs_0102,ur_ur5e,10000,GBP,2024-10-03,excellent,31000,6,auction_result,Surplus Auctions,ES,False,True,0.7
+obs_0103,ur_ur5e,14000,GBP,2026-02-18,excellent,22000,5,broker_quote,IRS Robotics,GB,True,True,0.75
+obs_0104,ur_ur10e,16000,GBP,2024-07-05,good,14000,6,dealer_listing,EU Robots,FR,True,True,0.85
+obs_0105,ur_ur10e,27000,GBP,2025-12-16,good,,3,broker_quote,IRS Robotics,DE,False,True,0.75
+obs_0106,ur_ur10e,15000,GBP,2025-07-06,good,4000,8,broker_quote,IRS Robotics,FR,False,True,0.75
+obs_0107,ur_ur10e,11500,GBP,2024-08-06,poor,9000,5,dealer_listing,EU Robots,DE,True,True,0.85
+obs_0108,ur_ur10e,12500,GBP,2026-04-09,good,31000,8,dealer_listing,EU Robots,JP,False,True,0.85
+obs_0109,ur_ur16e,14500,GBP,2025-05-06,fair,45000,5,auction_result,Surplus Auctions,GB,False,True,0.7
+obs_0110,ur_ur16e,16500,GBP,2025-02-15,poor,9000,4,oem_refurb,OEM Certified,US,True,True,0.9
+obs_0111,ur_ur16e,18000,GBP,2025-11-07,fair,31000,5,dealer_listing,EU Robots,FR,False,True,0.85
