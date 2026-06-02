@@ -481,6 +481,58 @@ st.markdown(f"""
     border-color: {LINE} !important;
   }}
 
+
+  /* Final number input contour + JSON toggle styling */
+  [data-testid="stNumberInput"] input,
+  [data-testid="stNumberInput"] [data-baseweb="input"],
+  [data-testid="stNumberInput"] [data-baseweb="input"] > div {{
+    background-color: #f4f0fa !important;
+    color: {INK} !important;
+    -webkit-text-fill-color: {INK} !important;
+    border-color: {LINE} !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }}
+
+  [data-testid="stNumberInput"] button {{
+    background-color: #f4f0fa !important;
+    color: {INK} !important;
+    border: 1px solid {LINE} !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }}
+
+  [data-testid="stNumberInput"] button:focus,
+  [data-testid="stNumberInput"] button:active,
+  [data-testid="stNumberInput"] input:focus {{
+    border-color: {LINE} !important;
+    box-shadow: 0 0 0 1px {LINE} !important;
+    outline: none !important;
+  }}
+
+  [data-testid="stNumberInput"] button svg,
+  [data-testid="stNumberInput"] button path {{
+    fill: {INK} !important;
+    stroke: {INK} !important;
+    color: {INK} !important;
+  }}
+
+  /* Make the Show as JSON toggle purple */
+  [data-testid="stToggle"] [role="switch"][aria-checked="true"],
+  [data-testid="stToggle"] [aria-checked="true"] {{
+    background-color: {PURPLE} !important;
+    border-color: {PURPLE} !important;
+  }}
+
+  [data-testid="stToggle"] [role="switch"],
+  [data-testid="stToggle"] [role="switch"] > div {{
+    border-color: {PURPLE_MID} !important;
+  }}
+
+  [data-testid="stToggle"] [role="switch"][aria-checked="false"] {{
+    background-color: #f4f0fa !important;
+  }}
+
 </style>
 """, unsafe_allow_html=True)
 
