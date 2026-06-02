@@ -9,6 +9,7 @@ that the API and tests use.
 Run:  streamlit run app.py
 """
 import json
+import pandas as pd
 import os
 import sys
 
@@ -367,6 +368,79 @@ st.markdown(f"""
     color: {INK} !important;
   }}
 
+
+  /* Stronger light styling for Streamlit inputs/selects */
+  div[data-baseweb="select"] div,
+  div[data-baseweb="input"] div,
+  div[data-baseweb="base-input"],
+  [data-testid="stNumberInput"] div,
+  [data-testid="stSelectbox"] div {{
+    background-color: #f4f0fa !important;
+    color: {INK} !important;
+  }}
+
+  div[data-baseweb="select"] *,
+  div[data-baseweb="input"] *,
+  [data-testid="stNumberInput"] *,
+  [data-testid="stSelectbox"] * {{
+    color: {INK} !important;
+    -webkit-text-fill-color: {INK} !important;
+  }}
+
+  input {{
+    background-color: #f4f0fa !important;
+    color: {INK} !important;
+    -webkit-text-fill-color: {INK} !important;
+  }}
+
+  div[data-baseweb="popover"] *,
+  div[data-baseweb="menu"] *,
+  ul[role="listbox"] *,
+  div[role="option"] * {{
+    background-color: #ffffff !important;
+    color: {INK} !important;
+    -webkit-text-fill-color: {INK} !important;
+  }}
+
+  div[role="option"]:hover,
+  div[role="option"]:hover * {{
+    background-color: #f4f0fa !important;
+    color: {PURPLE} !important;
+    -webkit-text-fill-color: {PURPLE} !important;
+  }}
+
+  /* Custom light tables */
+  .light-table {{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    color: {INK};
+    background: #ffffff;
+    border: 1px solid {LINE};
+  }}
+
+  .light-table th {{
+    background: #f2f0f6;
+    color: {INK};
+    font-weight: 700;
+    border: 1px solid {LINE};
+    padding: 6px 8px;
+    text-align: left;
+  }}
+
+  .light-table td {{
+    background: #ffffff;
+    color: {INK};
+    border: 1px solid {LINE};
+    padding: 6px 8px;
+  }}
+
+  .light-table tr:nth-child(even) td {{
+    background: #fbfafc;
+  }}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -521,7 +595,10 @@ with tab_pack:
                 "<span class='pill'>Comparable observations used for this valuation</span>",
                 unsafe_allow_html=True
             )
-            st.dataframe(v["comps_used"], use_container_width=True, hide_index=True)
+            st.markdown(
+                pd.DataFrame(v["comps_used"]).to_html(index=False, classes="light-table", border=0),
+                unsafe_allow_html=True
+            )
 
         st.markdown('<div class="sec">LTV Recommendation</div>', unsafe_allow_html=True)
         c1, c2, c3, c4 = st.columns(4)
@@ -624,7 +701,10 @@ with tab_pack:
                 },
             ]
 
-            st.dataframe(comparison_rows, use_container_width=True, hide_index=True)
+            st.markdown(
+                pd.DataFrame(comparison_rows).to_html(index=False, classes="light-table", border=0),
+                unsafe_allow_html=True
+            )
             st.caption("This comparison proves the live mechanism: when an asset-risk input changes, Oracle updates valuation, LTV, recovery and the underwriting decision.")
 
 
@@ -969,7 +1049,10 @@ with tab_portfolio:
         coverage["min_price"] = coverage["min_price"].round(0).astype("Int64")
         coverage["max_price"] = coverage["max_price"].round(0).astype("Int64")
 
-        st.dataframe(coverage, use_container_width=True, hide_index=True)
+        st.markdown(
+            coverage.to_html(index=False, classes="light-table", border=0),
+            unsafe_allow_html=True
+        )
 
         strong = int((coverage["coverage_band"] == "strong").sum())
         usable = int((coverage["coverage_band"] == "usable").sum())
