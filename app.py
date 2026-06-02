@@ -441,6 +441,46 @@ st.markdown(f"""
     background: #fbfafc;
   }}
 
+
+  /* Force number input field and +/- controls to light styling */
+  [data-testid="stNumberInput"] input {{
+    background-color: #f4f0fa !important;
+    color: {INK} !important;
+    -webkit-text-fill-color: {INK} !important;
+  }}
+
+  [data-testid="stNumberInput"] button {{
+    background-color: #f4f0fa !important;
+    color: {INK} !important;
+    border: 1px solid {LINE} !important;
+  }}
+
+  [data-testid="stNumberInput"] button:hover {{
+    background-color: #e8e1f1 !important;
+    color: {PURPLE} !important;
+    border-color: {PURPLE_MID} !important;
+  }}
+
+  [data-testid="stNumberInput"] button svg,
+  [data-testid="stNumberInput"] button path {{
+    fill: {INK} !important;
+    color: {INK} !important;
+    stroke: {INK} !important;
+  }}
+
+  [data-testid="stNumberInput"] div {{
+    background-color: #f4f0fa !important;
+  }}
+
+  [data-testid="stNumberInput"] [data-baseweb="input"] {{
+    background-color: #f4f0fa !important;
+  }}
+
+  [data-testid="stNumberInput"] [data-baseweb="input"] > div {{
+    background-color: #f4f0fa !important;
+    border-color: {LINE} !important;
+  }}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -860,7 +900,7 @@ with tab_sources:
         view = view[view["model_name"] == model_pick]
     if src_pick != "(all)":
         view = view[view["source_type"] == src_pick]
-    st.dataframe(view, use_container_width=True, hide_index=True)
+    st.markdown(view.to_html(index=False, classes="light-table", border=0), unsafe_allow_html=True)
     st.caption(f"Showing {len(view)} of {len(all_df)} observations. "
                "reliability_weight (0\u20131) is how much each source is trusted in the weighted valuation.")
 
