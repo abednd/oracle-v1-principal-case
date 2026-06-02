@@ -312,6 +312,61 @@ st.markdown(f"""
     color: {MUTED} !important;
   }}
 
+
+  /* Force Streamlit widgets back to light styling */
+  div[data-baseweb="select"] > div {{
+    background-color: #f4f0fa !important;
+    color: {INK} !important;
+    border: 1px solid {LINE} !important;
+  }}
+
+  div[data-baseweb="select"] span {{
+    color: {INK} !important;
+  }}
+
+  div[data-baseweb="popover"],
+  div[data-baseweb="menu"],
+  ul[role="listbox"] {{
+    background-color: #ffffff !important;
+    color: {INK} !important;
+  }}
+
+  div[role="option"] {{
+    background-color: #ffffff !important;
+    color: {INK} !important;
+  }}
+
+  div[role="option"]:hover {{
+    background-color: #f4f0fa !important;
+    color: {PURPLE} !important;
+  }}
+
+  input, textarea, .stNumberInput input {{
+    background-color: #f4f0fa !important;
+    color: {INK} !important;
+    border: 1px solid {LINE} !important;
+  }}
+
+  button[kind="secondary"], button[aria-label="Increment"], button[aria-label="Decrement"] {{
+    background-color: #f4f0fa !important;
+    color: {INK} !important;
+    border-color: {LINE} !important;
+  }}
+
+  [data-testid="stDataFrame"] {{
+    background-color: #ffffff !important;
+    color: {INK} !important;
+  }}
+
+  [data-testid="stDataFrame"] * {{
+    color: {INK} !important;
+  }}
+
+  /* Dataframe cells / headers in deployed Streamlit */
+  .glide-data-grid, .glide-data-grid * {{
+    color: {INK} !important;
+  }}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -445,6 +500,20 @@ with tab_pack:
             f"Adjustments applied — age ×{adj['age']} · condition ×{adj['condition']} · "
             f"hours ×{adj['hours']} · geography ×{adj['geography']} · generation ×{adj['generation']} "
             f"· method: {v['method']}"
+        )
+
+        st.markdown(
+            f"""
+            <div style="font-size:13px; color:#6f687d; margin-top:8px; margin-bottom:12px; line-height:1.55;">
+              <div><b style="color:{PURPLE};">Age</b> comes from the age-retention curve; older arms receive lower retention factors.</div>
+              <div><b style="color:{PURPLE};">Condition</b> uses grade multipliers: good = baseline, excellent premium, fair/poor discount.</div>
+              <div><b style="color:{PURPLE};">Hours</b> comes from a wear curve; higher operating hours reduce value like equipment mileage.</div>
+              <div><b style="color:{PURPLE};">Geography</b> applies market-liquidity multipliers; mature resale markets receive less/no discount.</div>
+              <div><b style="color:{PURPLE};">Generation</b> applies obsolescence penalties for older controllers or discontinued model families.</div>
+              <div><b style="color:{PURPLE};">Method</b> shows whether valuation used comparable observations or a fallback depreciation curve.</div>
+            </div>
+            """,
+            unsafe_allow_html=True
         )
 
         if v["comps_used"]:
