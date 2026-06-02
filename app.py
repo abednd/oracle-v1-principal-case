@@ -600,6 +600,51 @@ st.markdown(f"""
     stroke: {PURPLE} !important;
   }}
 
+
+  /* Match select/dropdown fields to the darker number-input style */
+  [data-testid="stSelectbox"] [data-baseweb="select"],
+  [data-testid="stSelectbox"] [data-baseweb="select"] > div,
+  div[data-baseweb="select"],
+  div[data-baseweb="select"] > div {{
+    background-color: #262733 !important;
+    color: #ffffff !important;
+    border-color: #262733 !important;
+  }}
+
+  [data-testid="stSelectbox"] *,
+  div[data-baseweb="select"] *,
+  div[data-baseweb="select"] span {{
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }}
+
+  [data-testid="stSelectbox"] svg,
+  [data-testid="stSelectbox"] path {{
+    fill: #ffffff !important;
+    stroke: #ffffff !important;
+    color: #ffffff !important;
+  }}
+
+  div[data-baseweb="popover"],
+  div[data-baseweb="menu"],
+  ul[role="listbox"] {{
+    background-color: #262733 !important;
+    color: #ffffff !important;
+  }}
+
+  div[role="option"],
+  div[role="option"] * {{
+    background-color: #262733 !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }}
+
+  div[role="option"]:hover,
+  div[role="option"]:hover * {{
+    background-color: #3a3548 !important;
+    color: #ffffff !important;
+  }}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -651,7 +696,7 @@ with tab_pack:
         label = st.selectbox("Robotic arm", list(asset_labels.keys()), index=default_idx)
         asset_id = asset_labels[label]
     with r1c2:
-        year = int(st.text_input("Year of manufacture", value="2021"))
+        year = st.number_input("Year of manufacture", 2010, 2026, 2021, 1)
     with r1c3:
         condition = st.selectbox("Condition", ["excellent", "good", "fair", "poor"], index=1)
     with r1c4:
@@ -660,11 +705,11 @@ with tab_pack:
     hours = st.slider("Operating hours", 0, 80000, 12000, 1000)
     r2c1, r2c2, r2c3, r2c4 = st.columns(4)
     with r2c1:
-        financing = int(st.text_input("Requested financing (GBP)", value="40000"))
+        financing = st.number_input("Requested financing (GBP)", 0, 400000, 40000, 1000)
     with r2c2:
-        project_cost = int(st.text_input("Total project cost (GBP)", value="280000"))
+        project_cost = st.number_input("Total project cost (GBP)", 0, 2000000, 280000, 5000)
     with r2c3:
-        term = int(st.text_input("Term (months)", value="48"))
+        term = st.number_input("Term (months)", 12, 120, 48, 6)
     with r2c4:
         industry = st.selectbox("End-customer industry",
                                 ["packaging", "automotive", "logistics", "general_manufacturing",
