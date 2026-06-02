@@ -533,6 +533,73 @@ st.markdown(f"""
     background-color: #f4f0fa !important;
   }}
 
+
+  /* Final hard override: number inputs, select boxes, focus rings */
+  [data-testid="stNumberInput"] [data-baseweb="input"],
+  [data-testid="stNumberInput"] [data-baseweb="input"] > div,
+  [data-testid="stNumberInput"] input,
+  [data-testid="stNumberInput"] button,
+  [data-testid="stSelectbox"] [data-baseweb="select"],
+  [data-testid="stSelectbox"] [data-baseweb="select"] > div {{
+    background-color: #f4f0fa !important;
+    color: {INK} !important;
+    -webkit-text-fill-color: {INK} !important;
+    border-color: {LINE} !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }}
+
+  [data-testid="stNumberInput"] [data-baseweb="input"]:focus-within,
+  [data-testid="stNumberInput"] [data-baseweb="input"] > div:focus-within,
+  [data-testid="stNumberInput"] input:focus,
+  [data-testid="stNumberInput"] button:focus,
+  [data-testid="stNumberInput"] button:active {{
+    border-color: {LINE} !important;
+    box-shadow: 0 0 0 1px {LINE} !important;
+    outline: none !important;
+  }}
+
+  [data-testid="stNumberInput"] button {{
+    border-left: 1px solid {LINE} !important;
+  }}
+
+  [data-testid="stNumberInput"] button svg,
+  [data-testid="stNumberInput"] button path {{
+    fill: {INK} !important;
+    stroke: {INK} !important;
+    color: {INK} !important;
+  }}
+
+  /* Remove black browser/autofocus rings inside widgets */
+  *:focus {{
+    outline-color: {LINE} !important;
+  }}
+
+  /* Purple toggle styling - Streamlit uses checkbox-like internals in some versions */
+  [data-testid="stToggle"] div[role="switch"],
+  [data-testid="stToggle"] button,
+  [data-testid="stToggle"] label span {{
+    border-color: {PURPLE_MID} !important;
+  }}
+
+  [data-testid="stToggle"] div[role="switch"][aria-checked="true"],
+  [data-testid="stToggle"] button[aria-checked="true"] {{
+    background-color: {PURPLE} !important;
+    border-color: {PURPLE} !important;
+  }}
+
+  [data-testid="stToggle"] div[role="switch"][aria-checked="false"],
+  [data-testid="stToggle"] button[aria-checked="false"] {{
+    background-color: #f4f0fa !important;
+    border-color: {PURPLE_MID} !important;
+  }}
+
+  [data-testid="stToggle"] svg,
+  [data-testid="stToggle"] path {{
+    fill: {PURPLE} !important;
+    stroke: {PURPLE} !important;
+  }}
+
 </style>
 """, unsafe_allow_html=True)
 
