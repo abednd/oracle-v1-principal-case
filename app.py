@@ -283,6 +283,35 @@ st.markdown(f"""
     box-shadow: inset 0 -3px 0 {PURPLE};
   }}
 
+
+  /* Force readable text on light background */
+  .stMarkdown, .stMarkdown p, .stMarkdown div, .stMarkdown span {{
+    color: {INK};
+  }}
+
+  label, [data-testid="stWidgetLabel"], [data-testid="stWidgetLabel"] p {{
+    color: {INK} !important;
+    opacity: 1 !important;
+  }}
+
+  [data-testid="stCaptionContainer"], [data-testid="stCaptionContainer"] p {{
+    color: {MUTED} !important;
+    opacity: 1 !important;
+  }}
+
+  [data-testid="stMarkdownContainer"] p {{
+    color: {INK};
+  }}
+
+  [data-testid="stDataFrame"] {{
+    color: {INK};
+  }}
+
+  /* Keep helper/disclaimer text readable */
+  small, .caption, .stCaption {{
+    color: {MUTED} !important;
+  }}
+
 </style>
 """, unsafe_allow_html=True)
 
