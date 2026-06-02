@@ -599,52 +599,6 @@ st.markdown(f"""
     fill: {PURPLE} !important;
     stroke: {PURPLE} !important;
   }}
-
-
-  /* Match select/dropdown fields to the darker number-input style */
-  [data-testid="stSelectbox"] [data-baseweb="select"],
-  [data-testid="stSelectbox"] [data-baseweb="select"] > div,
-  div[data-baseweb="select"],
-  div[data-baseweb="select"] > div {{
-    background-color: #262733 !important;
-    color: #ffffff !important;
-    border-color: #262733 !important;
-  }}
-
-  [data-testid="stSelectbox"] *,
-  div[data-baseweb="select"] *,
-  div[data-baseweb="select"] span {{
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-  }}
-
-  [data-testid="stSelectbox"] svg,
-  [data-testid="stSelectbox"] path {{
-    fill: #ffffff !important;
-    stroke: #ffffff !important;
-    color: #ffffff !important;
-  }}
-
-  div[data-baseweb="popover"],
-  div[data-baseweb="menu"],
-  ul[role="listbox"] {{
-    background-color: #262733 !important;
-    color: #ffffff !important;
-  }}
-
-  div[role="option"],
-  div[role="option"] * {{
-    background-color: #262733 !important;
-    color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
-  }}
-
-  div[role="option"]:hover,
-  div[role="option"]:hover * {{
-    background-color: #3a3548 !important;
-    color: #ffffff !important;
-  }}
-
 </style>
 """, unsafe_allow_html=True)
 
